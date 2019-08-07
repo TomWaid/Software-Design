@@ -1,2 +1,2 @@
 # Software Design  
-assignments form software design
+assignments from software design
