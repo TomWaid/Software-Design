@@ -1,0 +1,59 @@
+Tests:
+x canary test
+x create a circle
+x change location of a circle
+x create a rectangle
+x change location of a rectangle
+x create a square               
+x change location of a square
+x a point is outside a circle
+x a point is inside a circle
+x a point is on a circle
+x a point is inside rectangle
+x a point is outside rectangle
+x a point is on the left edge of a rectangle
+x a point is on the top edge of a rectangle
+x a point is on the right edge of a rectangle
+x a point is on the bottom edge of a rectangle
+x a point is on the left edge of a square
+x a point is on the top edge of a square
+x a point is on the right edge of a square
+x a point is on the bottom edge of a square
+x a diagram has nothing in it
+x add a circle to a diagram
+x add two circles to a diagram
+x add a circle and a rectangle to a diagram
+x add a circle, a rectangle, and a square to a diagram
+x a diagram with nothing ignores deleteAt(location) request
+x a diagram with two circles deletes nothing when location is not within either circle
+x a diagram with two circles at the same location deletes the first circle for location within the circle
+x a diagram with two circles at different location delete second circle when location points to second circle
+x a diagram with a circle and a rectangle, where circle is smaller and on top of the rectangle, delete circle when location is within the circle
+x a diagram with a circle and a rectangle, where circle is smaller and on top of the rectangle, delete rectangle when location is within the rectangle but outside the circle
+x a diagram with a rectangle and a square, where square is smaller and on top of rectangle, deletes square when location is within the square
+x a diagram with nothing returns nothing for the selectAt(location) request
+x a diagram with two circles selects nothing when location is not within either circle
+x a diagram with two circles at different location selects the first circle when location points to first circle
+x a diagram with two circles at different location selects the second circle when location points to second circle
+x a diagram with two circles at the same location selects the circle on the top for location within the circle - the one added second is on the top
+x a diagram with a circle and a rectangle, where circle is smaller and on top of the rectangle, selects circle when location is within the circle
+x a diagram with a circle and a rectangle, where circle is smaller and on top of the rectangle, selects rectangle when location is within the rectangle but outside the circle
+x given a rectangular region, group all shapes within that region
+x group will not group duplicate shapes
+x a diagram with shapes turns into a diagram with a group when all shapes are grouped
+x a diagram with shapes turns into a diagram with a group and a few shapes when only a few shapes are grouped
+x ungrouping a group replaces the group within the digram with shapes in the group
+x move a group and make sure all its members moved
+x delete a group and make sure diagram does not have the group nor the shapes that were in the group
+x group two groups and a circle into a group
+x check if squares are in a region
+x check if rectangles are in a region
+x check if a group is in a region
+x check if a group is on a point
+x save a diagram with nothing in it
+x save a diagram with one circle in it
+x save a diagram with one circle and one rectangular in it
+x load a diagram with nothing in it
+x load a diagram with one circle in it
+x load a diagram with one circle and one rectangular in it
+x ungrouping a group that doesn't exist does nothing
