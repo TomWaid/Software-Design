@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="airportinfo.FAAAirportInfoServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-03-01T11:17:38" hostname="DESKTOP-AI6RRNK" time="0.597">
+  <properties/>
+  <testcase name="fetchDataCallsCreateAirportWithResponseFromGetJSON()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.032"/>
+  <testcase name="getJSONFromServiceURLReturnsJSON()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.541"/>
+  <testcase name="verifyAirportHasAllParametersRequired()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.011"/>
+  <testcase name="fetchDataReturnsTheAirportCreatedByCreateAirport()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.001"/>
+  <testcase name="fetchDataCallsGetJSON()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.001"/>
+  <testcase name="fetchDataPropagatesExceptionFromCreateAirport()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.003"/>
+  <testcase name="fetchDataPropagatesExceptionFromGetJSON()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.001"/>
+  <testcase name="createAirportThrowsExceptionWithNoAirportName()" classname="airportinfo.FAAAirportInfoServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

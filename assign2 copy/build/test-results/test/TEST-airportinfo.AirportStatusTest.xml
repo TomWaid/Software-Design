@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="airportinfo.AirportStatusTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-03-01T11:17:38" hostname="DESKTOP-AI6RRNK" time="0.246">
+  <properties/>
+  <testcase name="sortListOfAirports()" classname="airportinfo.AirportStatusTest" time="0.196"/>
+  <testcase name="getListOfTwoAirportsForListWithTwoAirportCodes()" classname="airportinfo.AirportStatusTest" time="0.02"/>
+  <testcase name="getSortedListOfTwoAirportsForListWithTwoAirportCodes()" classname="airportinfo.AirportStatusTest" time="0.001"/>
+  <testcase name="canary()" classname="airportinfo.AirportStatusTest" time="0.005"/>
+  <testcase name="getEmptyListOfAirportsForEmptyListOfCodes()" classname="airportinfo.AirportStatusTest" time="0.001"/>
+  <testcase name="oneInvalidAirportCodeGiven()" classname="airportinfo.AirportStatusTest" time="0.003"/>
+  <testcase name="twoCodesGivenSecondInvalid()" classname="airportinfo.AirportStatusTest" time="0.003"/>
+  <testcase name="getSortedListOfThreeAirportsForListWithThreeAirportCodes()" classname="airportinfo.AirportStatusTest" time="0.002"/>
+  <testcase name="getListOfOneAirportForListWithOneAirportCode()" classname="airportinfo.AirportStatusTest" time="0.001"/>
+  <testcase name="threeCodesGivenSecondInvalid()" classname="airportinfo.AirportStatusTest" time="0.002"/>
+  <testcase name="threeCodesGivenFirstInvalidThirdNetworkError()" classname="airportinfo.AirportStatusTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
