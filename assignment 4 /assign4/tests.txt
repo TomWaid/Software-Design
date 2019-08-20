@@ -1,0 +1,19 @@
+Tests:
+x canary test
+x pass length of zero returns map of nothing
+x pass length of one returns list of length one and price of one
+x pass length of two returns list of length two and price of two
+x pass length of five returns list of length five and price of five
+x pass length of ten returns list of length three and price of eleven
+x pass length of 11 returns list of length four and price of twelve
+x pass length of 14 returns list of length seven and price of fifteen
+x pass length which is not found returns zero price and no smaller cuts
+x pass length of zero returns map of nothing using optimized version
+x pass length of one returns list of length one and price of one using optimized version
+x pass length of two returns list of length two and price of two using optimized version
+x pass length of three returns list of length three and price of three using optimized version
+x pass length of five returns list of length five and price of five using optimized version
+x pass length of ten returns list of length three and price of eleven using optimized version
+x pass length of 11 returns list of length four and price of twelve using optimized version
+x pass length of 14 returns list of length seven and price of fifteen using optimized version
+x optimized version is atleast 10 times faster than normal version and results in both cases are same

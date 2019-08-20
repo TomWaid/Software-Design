@@ -1,0 +1,100 @@
+Assign4: Due 11:59PM April 12th
+
+A company is in the business of buying rods in wholesale, cutting it, and
+selling the pieces in the retail market. The market fluctuates and the price 
+for different sizes of rods changes by the day. Here's where we come in, the
+company wants our help to know how much maximum money they can make, and how 
+to cut the rods of a given length to get that maximum money.
+
+For example, if the rods of various lengths sell at the following prices on
+a given day:
+
+Inch   price
+1       $1
+2       $1
+3       $2
+4       $3
+5       $4
+6       $5
+7       $5
+8       $9
+9       $9
+10      $10
+
+Cutting a 20 inches rod into ten pieces of 2 inches each will only get them 
+$10. However, if they cut it into 6 pieces of two 8-inches, and four 1-inches
+will get them $22. There may be other combinations that produce better price.
+The additional challenge is the prices fluctuate each day.
+
+We're asked to write a program, but in a way the algorithm for computing
+the sizes can be changed.
+
+Write a class RodCutter that will take the various lengths and their prices.
+Then write one method on the class, cutRod that takes a length as parameter
+and returns two things - maximum price the company can expect and the
+size of the rods that they should cut the given length to get that price.
+For example, if the input parameter is 2 (and the prices are as above),
+then the output will be $2 and the sizes will be 1, 1 (for 2 pieces).
+
+First write the class RodCutter so it works with a simple algorithm.
+Then (and only after fully completing the above, not before), create another
+version of RodCutter that will use techniques to shorten the
+time to compute the result. The two versions must produce the same result,
+just their computational efficiencies must be different.
+
+Write a test to verify that the time taken by the second implementation is at least an order of magnitude faster than the first solution.
+
+After you complete the program, answer the following questions:
+
+1. What design principles did you use in this program. Explain each
+and specify the classes that participated.
+
+One of the key design principles that we used in this program was DRY. This was especially the case when creating the RodCutterOptimized class. 
+Originally, we had created an entirely new version of the RodCutter class that was memoized. However, after receiving
+feedback, we understood that we could reuse the existing RodCutter class methods as part of the memoized version in RodCutterOptimized. 
+This resulted in the memoized rodcutter being much more elegant. We went from around 50 lines of code for the memoized rodcutter to 16 lines.
+
+This was also the case for the RodCutterOptimizedTest. Originally, we had recreated identical tests for each of the rodcutter tests for the
+memoized version. However, after receiving feedback we discovered that it was possible to simply extend the RodCutter class to the memoized
+version and run all the tests using the memoized method if we allowed the setup for the original rodcutter test to use the memoized rodcutter.
+
+We followed Liskov's Substitution principle which is an extension of Open closed principle. It says that we must make sure that new derived classes are extending the base classes without changing their behavior. In short, derived classes must be substitutable
+for the base class.  Here RodCutterOptimized is a derived class which extends the base class and is substitutable for RodCutter class in the program. 
+
+Additionally, we also followed the Single Responsibility principle which states that a class or a function should handle only single responsibility. RodCutter class in our program is responsible for the
+cut rod algorithm and any modification in the algorithm will cause changes only in that class. 
+
+Another principle that we had to follow was the open-closed principle. This was a result of the specification in the assignment that the
+program must be able to take in any lengths and prices and return the right results. Originally, we passed in a state of the information
+for lengths and prices, however, we discovered that this approach was not extensible and that it was best to avoid using states if possible.
+In order to avoid this, we created the MaxPriceAndCuts class and utilized that class as part of our RodCutter class in order to create a 
+more dynamic RodCutter.
+
+2. What design patterns did you use in this program. Explain each
+and specify the classes that participated.
+
+A behavioral design pattern that we used was the compose method pattern. We achieved this by reducing the level of detail for our methods
+as well as reducing the duplication of code that we had. This is true of the RodCutterOptimizedTest method where we originally recreated the tests that we had in RodCutterTest. However, we realized that we could reuse the tests from RodCutterTest and remove our duplication.
+Additionally, we used a recursive cutRod method in computing the max price from a given length of rod. This helped reduce the level of detail
+of our cutRod method which should only be focused on computing the maximum price and lengths that a rod should be cut.
+
+A creational design pattern that we used was the Factory method pattern. Factory method pattern is used to create base classes with common functionality and let some of the derived classes change a few details around utilizing inheritance. RodCutter has the functionality to calculate the maximum 
+price and cuts and RodCutterOptimized inherited from RodCutter has some modification to use a cache of objects already computed using cut rod function of the base class
+RodCutter. 
+
+A creational pattern that we used was the builder pattern. As we have a RodCutter class that cuts rods, we can view this class as a builder
+that can be extended. For example, if we further steel rods or rods of some other material that needed to be cut with additional
+parameters, we could extend the RodCutter class and create a SteelRodCutter class as a concrete builder for cutting steel rods. Furthermore,
+we can view the product that the builder is creating as the MaxPriceAndCuts object that is returned from the RodCutter's cutRod method.
+
+Total [100]: 95
+All tests pass [20]:
+Test Quality [10]:
+Performance Test Quality [10]:
+Code Coverage [10]:
+Design Quality [20]:
+Code Quality [10]:
+Q1 [10]:
+
+Q2 [10]: -5
+Good mention of patterns but wrong identification of where they were used.

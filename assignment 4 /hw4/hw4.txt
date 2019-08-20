@@ -1,0 +1,74 @@
+HW4 Due 11:59PM April 19
+
+***There will be no reviews for this Homework***
+
+Please write your answer in this file.
+
+1. What did you essentially learn in this course about design?
+                                
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+Tommy's response:
+This class for me was like taking three sophomore math classes at the same time.
+It was very time consuming. I did not perform that well, and as a result it was an experience that caused a metamorphosis in my way of thinking. My abilities improved - that along with my interests, which became more professional. I want to say that I was deficient technology wise and I still am. We create things by testing them, and I really did not understand that.
+ 
+I really felt like I was challenged while taking this class. For sure I learned some things- like writing classes and running them all from a driver function. I learned that along with other things, like how to write readable code. When I pass off my code to someone else, there will be proper indentation, spacing and variables that have meaningful names, not cryptic ones. Unfortunately, I cannot say I learned all that I wanted to from this class. This comes from two things: one, I was not that tech-savvy and two the real-world deadlines-reviews/ learning factor.
+
+Ability-wise, I have improved by taking this class. As far as design is concerned, I do not understand a lot of the concepts for creating a design after taking the class. Therefore, I obviously cannot create a simple design. On the up and up though, I now understand about creating a program by testing. Once all my classes are over, I will think about something and create and abstraction of it. To implement the abstraction, I would look at the assignments from this class as I design - small steps!
+
+My interests are more professional now too. I plan to create services for abstractions. Anything I think hasn’t been done before- I will try to make. I am really interested in all the programing abstractions out there. For example, services- problems internal to the computer. I am extremely interested in test driven development. that I was not as good as I thought I was going to be. I couldn’t really pick up on that before you told me. But I see it now. So, what, the idea is objective, I am going to take it again. I am going to study. For all those reasons I will not say that I really got better at designing anything. But I will say that it lit a fire, and it will burn until I am dead. Also, I signed up for design and paradigms in the fall, with different professors of course. Then I will take them with you again after I understand them. 
+Thanks, Venkat.
+
+
+Chris' response:
+This class taught me very important software design practices that I was previously not following. When I wrote code in the past, it was often with no test cases. I would design the code as I was writing it, and this would often lead to very confusing
+and complicated code because I did not have a clear design process. After taking the class, I have learned that is important to have a strategic design in place prior to beginning.
+
+This class also taught me the important of automated tests. Because I had never written automated tests before, this was a very difficult mindset to adapt. However, once we started writing automated tests in our assignments, I quickly realized the importance
+of these tests. This was especially the case when tests would break after we modified a portion of our code. This was extremely helpful in identifying what was wrong with our code quickly. In the past, I had a much more difficult time discovering
+where and why my code was broken. This was the case in my own personal code as well as some of the code I saw in the workplace. Now that I am aware of the importance of automated tests, I will make sure to incorporate them into all the code that I write.
+
+This class also taught me extremely helpful design principles such as the open-closed principle, the dependency inversion principle, and the like substitution principle. When writing code in the past, I didn't usually consider whether my code
+was extensible or tightly coupled to other code. However, I now know that extensible code is much more desirable as it allows our code to be more modular and reusable. While I still run into issues of my code not being as extensible as it should, this is something
+I intend to work on and improve.
+
+I also learned the importance of working in teams in this class. In the past I have mostly written my code by myself. In my workplace I had to work with maybe one person, but they were usually my supervisor. Now, I have learned the importance of good communication with
+team members and that it is necessary to provide constructive feedback in order to make sure our code is following good software design principles.
+
+Deepika:
+
+Having worked in a corporate environment before, I was in an assumption that I possess a significant amount of knowledge about Software design. Little did I know, that what I knew was just the tip of an iceberg until I took this course. 
+
+I have learned that a good design will clearly show a separation of concerns. Modularity in the code will promote extensibility and reusability. We need to avoid code repetition so that changes in a particular functionality will result in changes in only one place. One way to to make sure that our code is modular is by complying with the DRY(Do not repeat yourself) principle. 
+
+I have learned the primary metrics for a class design - coupling and cohesion. Good design has weakest possible coupling which will make it easy to maintain the software. Good design has high cohesion where every class/module is focused and has a single responsibility. 
+
+I have learned several design principles like Liskov's Substitution Principle, Open Closed principle, Dependency inversion principle, the Single responsibility principle, Interface Segregation Principle. We have to make our code comply with these principles to achieve a better quality of code that is easy to maintain and refactor when new features are to be added.
+
+I have learned multiple Creational, Structural and Behavioural patterns and how to implement them in our code. I have also learned that design patterns are a communication tool rather than a design tool. We should not start a design contemplating on what patterns to use but instead, a pattern must emerge from our design.   
+
+My significant learning is that building software doesn't just mean to write code that will get the application working. A good design is the one where the system is reliable. I have learned that Test-driven development methodology helps in building a reliable system. Automated testing will provide a safety net and test-driven development will make it easier for new developers to make changes to the code as they will be alarmed by the tests if their changes break the existing logic. 
+
+All in all, I have learned that we need to be very careful and conscious while designing code and evaluate it constantly to produce good design leading to better quality code. Thanks, Venkat for getting me on the right path towards creating good design. 
+
+2. What are some of the general guidelines you would follow when designing?
+
+We will follow the Test-Driven development methodology to develop an application. We will start writing unit tests first and then write logic to make the tests work by following the YAGNI principle. 
+
+We will have automated tests in our code so that we can quickly discover if any changes in the application effect the existing functionality. We will also make sure we design our automated tests to achieve enough code coverage of our application.
+
+We will make sure that our code shows a clear separation of concerns. We will avoid code repetition and design in such a way that our code is modular and reusable. We will also make sure that each class, method or module in the application has a single purpose. 
+
+We will make sure our code complies with design principles like Single Responsibility principle, Open closed principle, Liskov's Substitution principle, Dependency Inversion principle etc., to ensure we develop good quality code that is easy to maintain. We will follow these principles in order to decouple our code and increase the extensibility of our code.
+
+We will follow good indentation in our code that is consistent and will convey a better structure of a program thus making the code more readable and understandable. 
+
+We will accept criticism, and not become overly attached to the code we create. 
+
+We will make sure the code we create is lightweight with only the necessary features- not overly extensible. 
+
+We will also make sure our teams are on board with good software design principles. Because most software is designed in groups, it is necessary for everyone on the project to be committed to software design. We will do this by encouraging our teams to take collective ownership of the code.
+
+We will also promote working with our teams positively through code reviews as well as through constructive feedback. We will make software design a priority in our teams and avoid shortcuts that compromise good software design.
+
+Total [10]: 10
